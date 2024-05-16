@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace KontrolaPoc.Models
+namespace Kontrola.Models
 {
     public class Gravidade
     {

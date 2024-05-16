@@ -1,9 +1,9 @@
-﻿using KontrolaPoc.Models;
+﻿using Kontrola.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace KontrolaPoc.Context
+namespace Kontrola.Context
 {
     public class AppDbContext : IdentityDbContext<IdentityUser>
     {

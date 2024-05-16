@@ -1,7 +1,10 @@
 ﻿//using Kontrola.Repositories;
 //using Kontrola.Repositories.Interfaces;
 //using Kontrola.Services;
-using KontrolaPoc.Context;
+using Kontrola.Context;
+using Kontrola.Models;
+using Kontrola.Repositories;
+using Kontrola.Repositories.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ReflectionIT.Mvc.Paging;
@@ -23,16 +26,24 @@ namespace WebAppRPv5
         {
             services.AddDbContext<AppDbContext>(options =>
               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient<IChamadoRepository, ChamadoRepository>();
+            services.AddTransient<IEnderecoRepository, EnderecoRepository>();
+            services.AddTransient<IGravidadeRepository, GravidadeRepository>();
+            services.AddTransient<IModalidadeRepository, ModalidadeRepository>();
+            services.AddTransient<IStatusRepository, StatusRepository>();
+            services.AddTransient<IChamadoRepository, ChamadoRepository>();
+            services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<IUrgenciaRepository, UrgenciaRepository>();
+            services.AddTransient<ITendenciaRepository, TendenciaRepository>();
+            services.AddTransient<IEquipamentoRepository, EquipamentoRepository>();
+
             services.AddControllersWithViews();
 
             //services.AddIdentity<IdentityUser, IdentityRole>()
             //    .AddEntityFrameworkStores<AppDbContext>()
             //    .AddDefaultTokenProviders();
-            //services.AddTransient<IChamadoRepository, ChamadoRepository>();
-            //services.AddTransient<IFilialRepository, FilialRepository>();
-            //services.AddTransient<IClienteRepository, ClienteRepository>();
-            //services.AddTransient<IGravidadeRepository, GravidadeRepository>();
-            //services.AddTransient<IEquipamentoRepository, EquipamentoRepository>();
+
             //services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
             services.AddPaging(options =>

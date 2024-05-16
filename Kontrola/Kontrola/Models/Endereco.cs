@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace KontrolaPoc.Models
+namespace Kontrola.Models
 {
     [Table("Enderecos")]
     public class Endereco
