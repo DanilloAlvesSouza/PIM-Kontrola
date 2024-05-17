@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\PIM\PIM-Kontrola\Kontrola\Kontrola
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamado/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWFkb1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_ChamadosHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGFtYWRvc0hlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_ValidationScriptsPartial.cshtml]
