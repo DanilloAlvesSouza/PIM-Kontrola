@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\adminarea.jpg",
+      "PackagePath": "staticwebassets\\images\\adminarea.jpg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\assistencia-tecnica.jpg",
+      "PackagePath": "staticwebassets\\images\\assistencia-tecnica.jpg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\fundo.jpeg",
+      "PackagePath": "staticwebassets\\images\\fundo.jpeg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\image1.jpg",
+      "PackagePath": "staticwebassets\\images\\image1.jpg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\image2.jpg",
+      "PackagePath": "staticwebassets\\images\\image2.jpg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\image3.jpg",
+      "PackagePath": "staticwebassets\\images\\image3.jpg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\image4.jpg",
+      "PackagePath": "staticwebassets\\images\\image4.jpg"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\negado1.jpg",
+      "PackagePath": "staticwebassets\\images\\negado1.jpg"
+    },
+    {
       "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
