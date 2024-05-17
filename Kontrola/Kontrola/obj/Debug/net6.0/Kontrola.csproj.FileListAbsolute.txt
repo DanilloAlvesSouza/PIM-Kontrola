@@ -574,6 +574,8 @@ C:\PIM\Kontrola\Kontrola\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows
 C:\PIM\Kontrola\Kontrola\obj\Debug\net6.0\Kontrola.csproj.AssemblyReference.cache
 C:\PIM\Kontrola\Kontrola\obj\Debug\net6.0\Kontrola.MvcApplicationPartsAssemblyInfo.cs
 C:\PIM\Kontrola\Kontrola\obj\Debug\net6.0\Kontrola.csproj.CopyComplete
+C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Globalization.Extensions.dll
+C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\appsettings.Development.json
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\appsettings.json
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\Kontrola.staticwebassets.runtime.json
@@ -739,7 +741,6 @@ C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Dynamic.Runti
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Formats.Asn1.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Globalization.Calendars.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Globalization.dll
-C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Globalization.Extensions.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.IO.Compression.Brotli.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.IO.Compression.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.IO.Compression.FileSystem.dll
@@ -796,7 +797,6 @@ C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Resources.Res
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Resources.Writer.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.CompilerServices.Unsafe.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.CompilerServices.VisualC.dll
-C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.Extensions.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.Handles.dll
 C:\PIM\PIM-Kontrola\Kontrola\Kontrola\bin\Debug\net6.0\refs\System.Runtime.InteropServices.dll

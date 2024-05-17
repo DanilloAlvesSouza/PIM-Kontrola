@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Security.Principal;
 
-namespace KontrolaPoc.Models
+namespace Kontrola.Models
 {
     public class Equipamento
     {

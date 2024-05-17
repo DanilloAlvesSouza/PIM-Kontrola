@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Chamado>
+
+@foreach (var model in Model)
+{
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFechamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modalidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gravidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Urgencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tendencia)
+        </th>
+        <th></th>
+    </tr>
+}

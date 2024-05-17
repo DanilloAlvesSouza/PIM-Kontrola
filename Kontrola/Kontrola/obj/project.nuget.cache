@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZB3YyvIbCoMlJXTeYqpc/hmwhPVoXxzbt7O6fItyOTxmWolz5HuD94ibUR4QJxSeco0CFKcU0Oo2RCpReRH+ig==",
+  "dgSpecHash": "lPsb7g+ICfsPcx6SWkH2SHy0ZU0QFVtU1ItQFFt5XXJd0fPOQlxWFJtLC5jK9suVQR319jLmZV4ZIpPUDPknSQ==",
   "success": true,
   "projectFilePath": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj",
   "expectedPackageFiles": [
@@ -87,7 +87,7 @@
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
-    "C:\\Users\\danal\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.23\\microsoft.data.sqlite.core.6.0.23.nupkg.sha512",
+    "C:\\Users\\danal\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.29\\microsoft.data.sqlite.core.6.0.29.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\6.0.16\\microsoft.dotnet.scaffolding.shared.6.0.16.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
@@ -95,8 +95,8 @@
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.10\\microsoft.entityframeworkcore.design.7.0.10.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.10\\microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512",
-    "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.23\\microsoft.entityframeworkcore.sqlite.6.0.23.nupkg.sha512",
-    "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.23\\microsoft.entityframeworkcore.sqlite.core.6.0.23.nupkg.sha512",
+    "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.29\\microsoft.entityframeworkcore.sqlite.6.0.29.nupkg.sha512",
+    "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.29\\microsoft.entityframeworkcore.sqlite.core.6.0.29.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.10\\microsoft.entityframeworkcore.sqlserver.7.0.10.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.10\\microsoft.entityframeworkcore.tools.7.0.10.nupkg.sha512",
     "C:\\Users\\danal\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
