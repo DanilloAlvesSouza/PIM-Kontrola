@@ -49,7 +49,7 @@ namespace Kontrola.Controllers
         // GET: Equipamentos/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Cnpj");
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Nome");
             return View();
         }
 
