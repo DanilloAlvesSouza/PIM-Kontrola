@@ -22,7 +22,7 @@ namespace Kontrola.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Clientes.ToListAsync());
+            return View(await _context.Clientes.ToListAsync());
         }
 
         // GET: Clientes/Details/5

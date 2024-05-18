@@ -22,6 +22,7 @@ namespace Kontrola.Controllers
         // GET: Equipamentos
         public async Task<IActionResult> Index()
         {
+            ViewBag.OpcaoMenu = 3;
             var appDbContext = _context.Equipamentos.Include(e => e.Cliente);
             return View(await appDbContext.ToListAsync());
         }
