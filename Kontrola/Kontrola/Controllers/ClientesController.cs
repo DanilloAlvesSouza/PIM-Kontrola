@@ -55,6 +55,14 @@ namespace Kontrola.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Verifique se todos os campos obrigatórios foram preenchidos
+                if (string.IsNullOrEmpty(cliente.Nome) || string.IsNullOrEmpty(cliente.Cnpj) || string.IsNullOrEmpty(cliente.email) || string.IsNullOrEmpty(cliente.Telefone))
+                {
+                    // Lançar uma exceção personalizada ou retornar um BadRequestResult
+                    // Aqui, estou lançando uma exceção InvalidOperationException
+                    throw new InvalidOperationException("Todos os campos obrigatórios devem ser preenchidos.");
+                }
+
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
