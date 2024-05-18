@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
+      "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\logoAzul.jpg",
+      "PackagePath": "staticwebassets\\images\\logoAzul.jpg"
+    },
+    {
       "Id": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\negado1.jpg",
       "PackagePath": "staticwebassets\\images\\negado1.jpg"
     },

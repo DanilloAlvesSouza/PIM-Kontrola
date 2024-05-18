@@ -41,9 +41,9 @@ namespace WebAppRPv5
 
             services.AddControllersWithViews();
 
-            //services.AddIdentity<IdentityUser, IdentityRole>()
-            //    .AddEntityFrameworkStores<AppDbContext>()
-            //    .AddDefaultTokenProviders();
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
             //services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MQqQ+/Ztkxv3zik4IVbpngOFH41qxkfGkKgyWqXkIm4=",
+  "Hash": "ojUSG2Dl0+i6FXPWcdmab0mLK8TgJ4qlsYB1dAVepJI=",
   "Source": "Kontrola",
   "BasePath": "_content/Kontrola",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\logoAzul.jpg",
+      "SourceId": "Kontrola",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\",
+      "BasePath": "_content/Kontrola",
+      "RelativePath": "images/logoAzul.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logoAzul.jpg"
     },
     {
       "Identity": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\wwwroot\\images\\negado1.jpg",
