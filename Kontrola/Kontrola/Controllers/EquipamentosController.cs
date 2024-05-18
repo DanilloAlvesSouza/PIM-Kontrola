@@ -22,6 +22,7 @@ namespace Kontrola.Controllers
         // GET: Equipamentos
         public async Task<IActionResult> Index()
         {
+            ViewBag.OpcaoMenu = 3;
             var appDbContext = _context.Equipamentos.Include(e => e.Cliente);
             return View(await appDbContext.ToListAsync());
         }
@@ -48,7 +49,7 @@ namespace Kontrola.Controllers
         // GET: Equipamentos/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Cnpj");
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Nome");
             return View();
         }
 
@@ -65,7 +66,7 @@ namespace Kontrola.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Cnpj", equipamento.ClienteId);
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Cnpj");
             return View(equipamento);
         }
 

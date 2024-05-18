@@ -107,8 +107,8 @@ namespace Kontrola.Migrations
 
                     b.Property<string>("email")
                         .IsRequired()
-                        .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("ClienteId");
 
@@ -217,6 +217,9 @@ namespace Kontrola.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("EquipamentoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
                     b.HasKey("ItemChamadoId");

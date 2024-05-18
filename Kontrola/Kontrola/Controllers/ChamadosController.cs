@@ -22,6 +22,7 @@ namespace Kontrola.Controllers
         // GET: Chamados
         public async Task<IActionResult> Index()
         {
+            
             var appDbContext = _context.Chamados.Include(c => c.Gravidade).Include(c => c.Modalidade).Include(c => c.Status).Include(c => c.Tendencia).Include(c => c.Urgencia);
             return View(await appDbContext.ToListAsync());
         }

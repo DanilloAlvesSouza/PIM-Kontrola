@@ -27,22 +27,23 @@ namespace WebAppRPv5
             services.AddDbContext<AppDbContext>(options =>
               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IChamadoRepository, ChamadoRepository>();
+            //services.AddTransient<IChamadoRepository, ChamadoRepository>();
             services.AddTransient<IEnderecoRepository, EnderecoRepository>();
             services.AddTransient<IGravidadeRepository, GravidadeRepository>();
             services.AddTransient<IModalidadeRepository, ModalidadeRepository>();
             services.AddTransient<IStatusRepository, StatusRepository>();
-            services.AddTransient<IChamadoRepository, ChamadoRepository>();
             services.AddTransient<IClienteRepository, ClienteRepository>();
             services.AddTransient<IUrgenciaRepository, UrgenciaRepository>();
             services.AddTransient<ITendenciaRepository, TendenciaRepository>();
             services.AddTransient<IEquipamentoRepository, EquipamentoRepository>();
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             services.AddControllersWithViews();
 
-            //services.AddIdentity<IdentityUser, IdentityRole>()
-            //    .AddEntityFrameworkStores<AppDbContext>()
-            //    .AddDefaultTokenProviders();
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
             //services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
