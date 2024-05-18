@@ -38,6 +38,8 @@ namespace WebAppRPv5
             services.AddTransient<ITendenciaRepository, TendenciaRepository>();
             services.AddTransient<IEquipamentoRepository, EquipamentoRepository>();
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             services.AddControllersWithViews();
 
             //services.AddIdentity<IdentityUser, IdentityRole>()
