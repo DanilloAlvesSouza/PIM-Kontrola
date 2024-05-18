@@ -1,4 +1,4 @@
-﻿namespace KontrolaPoc.Models
+﻿namespace Kontrola.Models
 {
     public class Urgencia
     {
