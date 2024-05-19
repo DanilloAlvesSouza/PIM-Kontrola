@@ -13,6 +13,8 @@ namespace Kontrola.ViewModels
         [Display(Name = "Senha")]
         public string Password { get; set; }
 
+        public string Role {  get; set; }
+
         public string ReturnUrl { get; set; }
     }
 }

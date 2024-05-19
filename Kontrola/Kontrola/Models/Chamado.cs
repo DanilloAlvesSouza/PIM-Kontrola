@@ -15,6 +15,9 @@ namespace Kontrola.Models
         {
             _context = context;
         }
+        public Chamado()
+        {
+        }
 
         [Key]
         public int ChamadoId { get; set; }

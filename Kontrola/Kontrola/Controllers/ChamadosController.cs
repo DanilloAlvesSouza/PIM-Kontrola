@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Kontrola.Context;
 using Kontrola.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Kontrola.Controllers
 {
+
     public class ChamadosController : Controller
     {
         private readonly AppDbContext _context;
@@ -19,7 +21,7 @@ namespace Kontrola.Controllers
             _context = context;
         }
 
-        // GET: Chamados
+        [Authorize(Roles = "Admin,Membro")]
         public async Task<IActionResult> Index()
         {
             
@@ -28,6 +30,7 @@ namespace Kontrola.Controllers
         }
 
         // GET: Chamados/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Chamados == null)
@@ -51,6 +54,7 @@ namespace Kontrola.Controllers
         }
 
         // GET: Chamados/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["GravidadeId"] = new SelectList(_context.Gravidades, "GravidadeId", "GravidadeId");
@@ -66,6 +70,7 @@ namespace Kontrola.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ChamadoId,DataInicio,DataFechamento,Descricao,Diagnostico,Pendencia,Conclusao,StatusId,ModalidadeId,GravidadeId,UrgenciaId,TendenciaId")] Chamado chamado)
         {
             if (ModelState.IsValid)
@@ -83,6 +88,7 @@ namespace Kontrola.Controllers
         }
 
         // GET: Chamados/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Chamados == null)
@@ -108,6 +114,7 @@ namespace Kontrola.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("ChamadoId,DataInicio,DataFechamento,Descricao,Diagnostico,Pendencia,Conclusao,StatusId,ModalidadeId,GravidadeId,UrgenciaId,TendenciaId")] Chamado chamado)
         {
             if (id != chamado.ChamadoId)
@@ -144,6 +151,7 @@ namespace Kontrola.Controllers
         }
 
         // GET: Chamados/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Chamados == null)
