@@ -22,7 +22,7 @@ namespace Kontrola.Models
 
         [Required(ErrorMessage = "e-mail obrigatório")]
         [Display(Name = "E-mail")]
-        [StringLength(255)]
+
         public string email { get; set; }
 
         [Required(ErrorMessage = "Telefone obrigatório")]
