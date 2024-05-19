@@ -5,6 +5,7 @@ using Kontrola.Context;
 using Kontrola.Models;
 using Kontrola.Repositories;
 using Kontrola.Repositories.Interfaces;
+using Kontrola.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ReflectionIT.Mvc.Paging;
@@ -36,7 +37,7 @@ namespace WebAppRPv5
             services.AddTransient<IUrgenciaRepository, UrgenciaRepository>();
             services.AddTransient<ITendenciaRepository, TendenciaRepository>();
             services.AddTransient<IEquipamentoRepository, EquipamentoRepository>();
-
+            services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddControllersWithViews();
@@ -45,7 +46,6 @@ namespace WebAppRPv5
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
-            //services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
             services.AddPaging(options =>
             {
@@ -77,7 +77,7 @@ namespace WebAppRPv5
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ISeedUserRoleInitial seedUserRoleInitial)
         {
             if (env.IsDevelopment())
             {
@@ -94,10 +94,10 @@ namespace WebAppRPv5
             app.UseStaticFiles();
             app.UseRouting();
 
-            ////cria perfil
-            //seedUserRoleInitial.SeedRoles();
-            ////cria os usuarios e atribui o perfil 
-            //seedUserRoleInitial.SeedUsers();
+            //cria perfil
+            seedUserRoleInitial.SeedRoles();
+            //cria os usuarios e atribui o perfil 
+            seedUserRoleInitial.SeedUsers();
 
 
             app.UseSession();

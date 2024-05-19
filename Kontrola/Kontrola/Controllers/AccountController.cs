@@ -62,13 +62,13 @@ namespace Kontrola.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = registroVM.UserName };
+                var user = new IdentityUser { UserName = registroVM.UserName};
                 var result = await _userManager.CreateAsync(user, registroVM.Password);
 
                 if (result.Succeeded)
                 {
-                    //await _signInManager.SignInAsync(user, isPersistent: false);
-                    await _userManager.AddToRoleAsync(user, "Tecnico");
+                   // await _signInManager.SignInAsync(user, isPersistent: false);
+                    await _userManager.AddToRoleAsync(user, registroVM.Role);
                     return RedirectToAction("Login", "Account");
                 }
                 else

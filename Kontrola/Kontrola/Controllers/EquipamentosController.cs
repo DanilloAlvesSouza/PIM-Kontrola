@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Kontrola.Context;
 using Kontrola.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Kontrola.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class EquipamentosController : Controller
     {
         private readonly AppDbContext _context;
