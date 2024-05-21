@@ -17,10 +17,10 @@ namespace Kontrola.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.10")
+                .HasAnnotation("ProductVersion", "6.0.30")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("Kontrola.Models.Chamado", b =>
                 {
@@ -28,7 +28,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChamadoId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChamadoId"), 1L, 1);
 
                     b.Property<string>("Conclusao")
                         .HasColumnType("nvarchar(max)");
@@ -85,7 +85,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClienteId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClienteId"), 1L, 1);
 
                     b.Property<string>("Cnpj")
                         .IsRequired()
@@ -107,8 +107,7 @@ namespace Kontrola.Migrations
 
                     b.Property<string>("email")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ClienteId");
 
@@ -121,7 +120,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EnderecoId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EnderecoId"), 1L, 1);
 
                     b.Property<string>("Bairro")
                         .IsRequired()
@@ -158,7 +157,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EquipamentoId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EquipamentoId"), 1L, 1);
 
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
@@ -195,7 +194,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GravidadeId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GravidadeId"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
@@ -211,7 +210,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ItemChamadoId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ItemChamadoId"), 1L, 1);
 
                     b.Property<int>("ChamadoId")
                         .HasColumnType("int");
@@ -237,7 +236,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ModalidadeId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ModalidadeId"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
@@ -253,7 +252,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StatusId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StatusId"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
@@ -269,7 +268,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TendenciaId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TendenciaId"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
@@ -285,7 +284,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UrgenciaId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UrgenciaId"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
@@ -328,7 +327,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -418,7 +417,7 @@ namespace Kontrola.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
