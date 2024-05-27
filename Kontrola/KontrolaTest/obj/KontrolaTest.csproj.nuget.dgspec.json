@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj": {}
+    "C:\\PIM\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj": {
+    "C:\\PIM\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj",
+        "projectUniqueName": "C:\\PIM\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj",
         "projectName": "KontrolaTest",
-        "projectPath": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj",
-        "packagesPath": "C:\\Users\\Mayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\KontrolaTest\\obj\\",
+        "projectPath": "C:\\PIM\\PIM-Kontrola\\Kontrola\\KontrolaTest\\KontrolaTest.csproj",
+        "packagesPath": "C:\\Users\\danal\\.nuget\\packages\\",
+        "outputPath": "C:\\PIM\\PIM-Kontrola\\Kontrola\\KontrolaTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj": {
-                "projectPath": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj"
+              "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj": {
+                "projectPath": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj"
               }
             }
           }
@@ -103,21 +103,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj": {
+    "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj",
+        "projectUniqueName": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj",
         "projectName": "Kontrola",
-        "projectPath": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj",
-        "packagesPath": "C:\\Users\\Mayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mayra\\Pim\\PIM-Kontrola\\Kontrola\\Kontrola\\obj\\",
+        "projectPath": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\Kontrola.csproj",
+        "packagesPath": "C:\\Users\\danal\\.nuget\\packages\\",
+        "outputPath": "C:\\PIM\\PIM-Kontrola\\Kontrola\\Kontrola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,7 +193,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
