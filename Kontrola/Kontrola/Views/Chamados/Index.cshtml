@@ -16,10 +16,7 @@
                     @Html.DisplayNameFor(model => model.DataInicio)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.DataFechamento)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Conclusao)
+                    @Html.DisplayNameFor(model => model.Cliente)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Status)
@@ -47,10 +44,7 @@
                         @Html.DisplayFor(modelItem => item.DataInicio)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.DataFechamento)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Conclusao)
+                        @Html.DisplayFor(modelItem => item.Cliente.Nome)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Status.Descricao)

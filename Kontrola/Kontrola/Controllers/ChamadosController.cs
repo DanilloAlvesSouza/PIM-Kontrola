@@ -24,8 +24,8 @@ namespace Kontrola.Controllers
         [Authorize(Roles = "Admin,Membro")]
         public async Task<IActionResult> Index()
         {
-            
-            var appDbContext = _context.Chamados.Include(c => c.Gravidade).Include(c => c.Modalidade).Include(c => c.Status).Include(c => c.Tendencia).Include(c => c.Urgencia);
+
+            var appDbContext = _context.Chamados.Include(c => c.Gravidade).Include(c => c.Cliente).Include(c => c.Modalidade).Include(c => c.Status).Include(c => c.Tendencia).Include(c => c.Urgencia);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -39,6 +39,7 @@ namespace Kontrola.Controllers
             }
 
             var chamado = await _context.Chamados
+                .Include(c => c.Cliente)
                 .Include(c => c.Gravidade)
                 .Include(c => c.Modalidade)
                 .Include(c => c.Status)
@@ -57,6 +58,7 @@ namespace Kontrola.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Nome");
             ViewData["GravidadeId"] = new SelectList(_context.Gravidades, "GravidadeId", "Descricao");
             ViewData["ModalidadeId"] = new SelectList(_context.Modalidades, "ModalidadeId", "Descricao");
             ViewData["StatusId"] = new SelectList(_context.Status, "StatusId", "Descricao");
@@ -71,7 +73,7 @@ namespace Kontrola.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("ChamadoId,DataInicio,DataFechamento,Descricao,Diagnostico,Pendencia,Conclusao,StatusId,ModalidadeId,GravidadeId,UrgenciaId,TendenciaId")] Chamado chamado)
+        public async Task<IActionResult> Create([Bind("ChamadoId,DataInicio,DataFechamento,Descricao,Diagnostico,Pendencia,Conclusao,ClienteId,StatusId,ModalidadeId,GravidadeId,UrgenciaId,TendenciaId")] Chamado chamado)
         {
             if (ModelState.IsValid)
             {
@@ -79,6 +81,7 @@ namespace Kontrola.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "ClienteId", chamado.ClienteId);
             ViewData["GravidadeId"] = new SelectList(_context.Gravidades, "GravidadeId", "GravidadeId", chamado.GravidadeId);
             ViewData["ModalidadeId"] = new SelectList(_context.Modalidades, "ModalidadeId", "ModalidadeId", chamado.ModalidadeId);
             ViewData["StatusId"] = new SelectList(_context.Status, "StatusId", "StatusId", chamado.StatusId);
@@ -101,6 +104,7 @@ namespace Kontrola.Controllers
             {
                 return NotFound();
             }
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Nome", chamado.ClienteId);
             ViewData["GravidadeId"] = new SelectList(_context.Gravidades, "GravidadeId", "Descricao", chamado.GravidadeId);
             ViewData["ModalidadeId"] = new SelectList(_context.Modalidades, "ModalidadeId", "Descricao", chamado.ModalidadeId);
             ViewData["StatusId"] = new SelectList(_context.Status, "StatusId", "Descricao", chamado.StatusId);
@@ -115,7 +119,7 @@ namespace Kontrola.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("ChamadoId,DataInicio,DataFechamento,Descricao,Diagnostico,Pendencia,Conclusao,StatusId,ModalidadeId,GravidadeId,UrgenciaId,TendenciaId")] Chamado chamado)
+        public async Task<IActionResult> Edit(int id, [Bind("ChamadoId,DataInicio,DataFechamento,Descricao,Diagnostico,Pendencia,Conclusao,StatusId,ModalidadeId,GravidadeId,UrgenciaId,TendenciaId,ClienteId")] Chamado chamado)
         {
             if (id != chamado.ChamadoId)
             {
@@ -142,6 +146,7 @@ namespace Kontrola.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "ClienteId", chamado.GravidadeId);
             ViewData["GravidadeId"] = new SelectList(_context.Gravidades, "GravidadeId", "GravidadeId", chamado.GravidadeId);
             ViewData["ModalidadeId"] = new SelectList(_context.Modalidades, "ModalidadeId", "ModalidadeId", chamado.ModalidadeId);
             ViewData["StatusId"] = new SelectList(_context.Status, "StatusId", "StatusId", chamado.StatusId);
@@ -160,6 +165,7 @@ namespace Kontrola.Controllers
             }
 
             var chamado = await _context.Chamados
+                .Include(c => c.Cliente)
                 .Include(c => c.Gravidade)
                 .Include(c => c.Modalidade)
                 .Include(c => c.Status)
@@ -188,14 +194,14 @@ namespace Kontrola.Controllers
             {
                 _context.Chamados.Remove(chamado);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ChamadoExists(int id)
         {
-          return _context.Chamados.Any(e => e.ChamadoId == id);
+            return _context.Chamados.Any(e => e.ChamadoId == id);
         }
     }
 }

@@ -41,6 +41,9 @@ namespace Kontrola.Models
         public int StatusId { get; set; }
         public virtual Status Status { get; set; }
 
+        public int ClienteId { get; set; }
+        public virtual Cliente Cliente { get; set; }
+
         public int ModalidadeId { get; set; }
         public virtual Modalidade Modalidade { get; set; }
 
