@@ -60,7 +60,7 @@ namespace Kontrola.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EquipamentoId,Marca,Modelo,NumeroSerie,Potencia,ClienteId")] Equipamento equipamento)
+        public async Task<IActionResult> Create([Bind("EquipamentoId,Marca,Modelo,NumeroSerie,Potencia,Tipo,TensaoEntrada,TensaoSaida,ClienteId")] Equipamento equipamento)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace Kontrola.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Cnpj");
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Nome");
             return View(equipamento);
         }
 
@@ -85,7 +85,7 @@ namespace Kontrola.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Cnpj", equipamento.ClienteId);
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "ClienteId", "Nome", equipamento.ClienteId);
             return View(equipamento);
         }
 
@@ -94,7 +94,7 @@ namespace Kontrola.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EquipamentoId,Marca,Modelo,NumeroSerie,Potencia,ClienteId")] Equipamento equipamento)
+        public async Task<IActionResult> Edit(int id, [Bind("EquipamentoId,Marca,Modelo,NumeroSerie,Potencia,Tipo,TensaoEntrada,TensaoSaida,ClienteId")] Equipamento equipamento)
         {
             if (id != equipamento.EquipamentoId)
             {

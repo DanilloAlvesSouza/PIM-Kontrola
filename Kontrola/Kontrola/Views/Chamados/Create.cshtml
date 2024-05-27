@@ -25,12 +25,14 @@
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-
             <div class="col-md-6">
-                <label asp-for="StatusId" class="control-label">Status</label>
+                <label asp-for="ClienteId" class="control-label">Cliente</label>
+                <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="StatusId" class="control-label">Cliente</label>
                 <select asp-for="StatusId" class="form-control" asp-items="ViewBag.StatusId"></select>
             </div>
-
             <div class="col-md-6">
                 <label asp-for="TendenciaId" class="control-label">Tendência</label>
                 <select asp-for="TendenciaId" class="form-control" asp-items="ViewBag.TendenciaId"></select>

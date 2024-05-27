@@ -23,10 +23,20 @@ namespace Kontrola.Models
         [Required(ErrorMessage = "Campo obrigatório")]
         [Display(Name = "Potência")]
         public string Potencia { get; set; }
+
+        [Required(ErrorMessage = "Campo obrigatório")]
+        [Display(Name = "Tipo de equipamento")]
+        public string Tipo { get; set; }
+
+        [Display(Name = "Tensão de entrada")]
+        public string TensaoEntrada { get; set; }
+
+        [Display(Name = "Tensão de saída")]
+        public string TensaoSaida { get; set; }
         public List<ItemChamado> itemChamados { get; set; }
 
         [Required(ErrorMessage = "Selecione um cliente")]
-        [Display(Name = "Localidade ?")]
+        [Display(Name = "Cliente ?")]
         public int ClienteId { get; set; }
         public virtual Cliente Cliente { get; set; }
 
