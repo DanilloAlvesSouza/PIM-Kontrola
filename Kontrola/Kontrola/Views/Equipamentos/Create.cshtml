@@ -1,49 +1,59 @@
 ﻿@model Kontrola.Models.Equipamento
-
 @{
-    ViewData["Title"] = "Create";
+	ViewData["Title"] = "Create";
 }
-
-<h1>Create</h1>
-
-<h4>Equipamento</h4>
+<h1>Criar equipamento</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Marca" class="control-label"></label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Modelo" class="control-label"></label>
-                <input asp-for="Modelo" class="form-control" />
-                <span asp-validation-for="Modelo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumeroSerie" class="control-label"></label>
-                <input asp-for="NumeroSerie" class="form-control" />
-                <span asp-validation-for="NumeroSerie" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Potencia" class="control-label"></label>
-                <input asp-for="Potencia" class="form-control" />
-                <span asp-validation-for="Potencia" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ClienteId" class="control-label"></label>
-                <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<div class="">
+	<div class=" d-flex justify-content-center">
+		<form class="row g-3 w-75 mt-3 border border-primary shadow-lg p-3 mb-5 bg-body-tertiary rounded" asp-action="Create">
+			<div asp-validation-summary="ModelOnly" class="text-danger w-100"></div>
+			<div class="col-md-6">
+				<label asp-for="Marca" class="control-label">Marca</label>
+				<input asp-for="Marca" class="form-control" />
+				<span asp-validation-for="Marca" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="Modelo" class="control-label">Modelo</label>
+				<input asp-for="Modelo" class="form-control" />
+				<span asp-validation-for="Modelo" class="text-danger"></span>
+			</div>
+			<div class="col-12">
+				<label asp-for="NumeroSerie" class="control-label">Número de Série</label>
+				<input asp-for="NumeroSerie" class="form-control" />
+				<span asp-validation-for="NumeroSerie" class="text-danger"></span>
+			</div>
+			<div class="col-12">
+				<label asp-for="Potencia" class="control-label">Potência</label>
+				<input asp-for="Potencia" class="form-control" />
+				<span asp-validation-for="Potencia" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="Potencia" class="control-label">Tensão de entrada</label>
+				<input asp-for="Potencia" class="form-control" />
+				<span asp-validation-for="Potencia" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="Potencia" class="control-label">Tensão de saida</label>
+				<input asp-for="Potencia" class="form-control" />
+				<span asp-validation-for="Potencia" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="Potencia" class="control-label">Tipo de equipamento</label>
+				<input asp-for="Potencia" class="form-control" />
+				<span asp-validation-for="Potencia" class="text-danger"></span>
+			</div>
+			<div class="col-md-6">
+				<label asp-for="ClienteId" class="control-label">Cliente</label>
+				<select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
+			</div>
+			<div class="">
+				<button type="submit" value="Criar" class="btn btn-success">Criar</button>
+				<a class="btn btn-danger" asp-action="Index">Cancelar</a>
+			</div>
+		</form>
+	</div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 

@@ -44,7 +44,7 @@ namespace WebAppRPv5
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();
+                .AddDefaultTokenProviders();    
 
 
             services.AddPaging(options =>
