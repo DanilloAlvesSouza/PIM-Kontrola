@@ -9,113 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Kontrola
 build_property.RootNamespace = Kontrola
-build_property.ProjectDir = c:\PIM\PIM-Kontrola\Kontrola\Kontrola\
+build_property.ProjectDir = C:\PIM\PIM-Kontrola\Kontrola\Kontrola\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = c:\PIM\PIM-Kontrola\Kontrola\Kontrola
+build_property.MSBuildProjectDirectory = C:\PIM\PIM-Kontrola\Kontrola\Kontrola
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Account/AccessDenied.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Account/Login.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Account/Register.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Create.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWFkb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Delete.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWFkb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Details.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWFkb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Edit.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWFkb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Index.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Chamados/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWFkb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Create.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Delete.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Details.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Edit.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Index.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Create.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWVudG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Delete.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWVudG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Details.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWVudG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Edit.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWVudG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Index.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Equipamentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhbWVudG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Home/Index.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/Error.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_ChamadosHeader.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_ChamadosHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGFtYWRvc0hlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_LoginPartial.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/_ViewImports.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/_ViewStart.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_Layout.cshtml]
+[C:/PIM/PIM-Kontrola/Kontrola/Kontrola/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7xf78lioy2

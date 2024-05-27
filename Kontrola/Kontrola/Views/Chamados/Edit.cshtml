@@ -4,22 +4,20 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Chamado</h4>
+<h1>Editar chamado</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+<div class="">
+    <div class=" d-flex justify-content-center">
+        <form class="row g-3 w-75 mt-3 border border-primary shadow-lg p-3 mb-5 bg-body-tertiary rounded" asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ChamadoId" />
-            <div class="form-group">
-                <label asp-for="DataInicio" class="control-label"></label>
+            <div class="col-md-6">
+                <label asp-for="DataInicio" class="control-label">Data inicio</label>
                 <input asp-for="DataInicio" class="form-control" />
                 <span asp-validation-for="DataInicio" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="DataFechamento" class="control-label"></label>
+            <div class="col-md-6">
+                <label asp-for="DataFechamento" class="control-label">Data fechamento</label>
                 <input asp-for="DataFechamento" class="form-control" />
                 <span asp-validation-for="DataFechamento" class="text-danger"></span>
             </div>
@@ -28,54 +26,35 @@
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Diagnostico" class="control-label"></label>
-                <input asp-for="Diagnostico" class="form-control" />
-                <span asp-validation-for="Diagnostico" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Pendencia" class="control-label"></label>
-                <input asp-for="Pendencia" class="form-control" />
-                <span asp-validation-for="Pendencia" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Conclusao" class="control-label"></label>
-                <input asp-for="Conclusao" class="form-control" />
-                <span asp-validation-for="Conclusao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StatusId" class="control-label"></label>
+            <div class="col-12">
+                <label asp-for="StatusId" class="control-label">Status</label>
                 <select asp-for="StatusId" class="form-control" asp-items="ViewBag.StatusId"></select>
                 <span asp-validation-for="StatusId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ModalidadeId" class="control-label"></label>
+            <div class="col-md-6">
+                <label asp-for="ModalidadeId" class="control-label">Modalidade</label>
                 <select asp-for="ModalidadeId" class="form-control" asp-items="ViewBag.ModalidadeId"></select>
                 <span asp-validation-for="ModalidadeId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="GravidadeId" class="control-label"></label>
+            <div class="col-md-6">
+                <label asp-for="GravidadeId" class="control-label">Gravidade</label>
                 <select asp-for="GravidadeId" class="form-control" asp-items="ViewBag.GravidadeId"></select>
                 <span asp-validation-for="GravidadeId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="UrgenciaId" class="control-label"></label>
+            <div class="col-md-6">
+                <label asp-for="UrgenciaId" class="control-label">Urgência</label>
                 <select asp-for="UrgenciaId" class="form-control" asp-items="ViewBag.UrgenciaId"></select>
                 <span asp-validation-for="UrgenciaId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TendenciaId" class="control-label"></label>
+            <div class="col-md-6">
+                <label asp-for="TendenciaId" class="control-label">Tendência</label>
                 <select asp-for="TendenciaId" class="form-control" asp-items="ViewBag.TendenciaId"></select>
                 <span asp-validation-for="TendenciaId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="col-12">
+                <button type="submit" value="Save" class="btn btn-success">Editar</button>
+                <a class="btn btn-danger" asp-action="Index">Cancelar</a>
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

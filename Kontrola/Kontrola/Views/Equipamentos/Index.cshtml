@@ -1,59 +1,59 @@
 ﻿@model IEnumerable<Equipamento>
 
 @{
-	ViewData["Title"] = "Index";
+    ViewData["Title"] = "Index";
 }
 <h1 class="margin-bottom">Equipamentos</h1>
 <p>
-	<a class="btn btn-success shadow rounded" asp-action="Create">Novo Equipamento</a>
+    <a class="btn btn-success shadow rounded" asp-action="Create">Novo Equipamento</a>
 </p>
 <table class=" table shadow-lg p-3 mb-5 bg-body-tertiary rounded ">
-	<thead class="">
-		<tr class="table-info">
-			<th>
-				@Html.DisplayNameFor(model => model.Marca)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Modelo)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.NumeroSerie)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Potencia)
-			</th>
-			<th>
-				@Html.DisplayNameFor(model => model.Cliente)
-			</th>
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model)
-		{
-			<tr class="">
-				<td>
-					@Html.DisplayFor(modelItem => item.Marca)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Modelo)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.NumeroSerie)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Potencia)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Cliente.Nome)
-				</td>
-				<td class="posicao">
-					<a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.EquipamentoId">Editar</a>
-					<a class="btn btn-secondary " asp-action="Details" asp-route-id="@item.EquipamentoId">Detalhes</a>
-					<a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.EquipamentoId">Preencher</a>
-					<a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.EquipamentoId">Deletar</a>
-				</td>
-			</tr>
-		}
-	</tbody>
+    <thead class="">
+        <tr class="table-info">
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroSerie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Potencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumeroSerie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Potencia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cliente.Nome)
+                </td>
+                <td class="posicao">
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.EquipamentoId">Editar</a>
+                    <a class="btn btn-secondary " asp-action="Details" asp-route-id="@item.EquipamentoId">Detalhes</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.EquipamentoId">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
