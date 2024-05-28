@@ -3,11 +3,11 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h1>Chamados</h1>
-
-<p>
+<h1>Lista de Chamados</h1>
+<hr />
+@* <p>
     <a asp-action="Create" class="btn btn-success shadow rounded">Novo chamado</a>
-</p>
+</p> *@
 <div class="table-responsive">
     <table class="table shadow-lg p-3 mb-5 bg-body-tertiary rounded">
         <thead>
@@ -44,34 +44,31 @@
             {
                 <tr class="text-center">
                     <td>
-                @Html.DisplayFor(modelItem => item.DataInicio)
+                        @Html.DisplayFor(modelItem => item.DataInicio)
                     </td>
                     <td>
-                @Html.DisplayFor(modelItem => item.Cliente.Nome)
+                        @Html.DisplayFor(modelItem => item.Cliente.Nome)
                     </td>
                     <td>
-                @Html.DisplayFor(modelItem => item.Status.Descricao)
+                        @Html.DisplayFor(modelItem => item.Status.Descricao)
                     </td>
                     <td>
-                @Html.DisplayFor(modelItem => item.Modalidade.Descricao)
+                        @Html.DisplayFor(modelItem => item.Modalidade.Descricao)
                     </td>
                     <td>
-                @Html.DisplayFor(modelItem => item.Gravidade.Descricao)
+                        @Html.DisplayFor(modelItem => item.Gravidade.Descricao)
                     </td>
                     <td>
-                @Html.DisplayFor(modelItem => item.Urgencia.Descricao)
+                        @Html.DisplayFor(modelItem => item.Urgencia.Descricao)
                     </td>
                     <td>
-                @Html.DisplayFor(modelItem => item.Tendencia.Descricao)
+                        @Html.DisplayFor(modelItem => item.Tendencia.Descricao)
                     </td>
                     <td>
-                        <a class="btn btn-warning " asp-action="Edit" asp-route-id="@item.ChamadoId">Editar</a>
                         <a class="btn btn-secondary " asp-action="Details" asp-route-id="@item.ChamadoId">Detalhes</a>
-                        @* <a class="btn btn-primary" asp-action="Preencher" asp-route-id="@item.ChamadoId">Preencher</a> *@
-                        <a class="btn btn-danger " asp-action="Delete" asp-route-id="@item.ChamadoId">Deletar</a>
                     </td>
                 </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+            }
+        </tbody>
+    </table>
+</div>

@@ -21,7 +21,7 @@ namespace Kontrola.Controllers
             _context = context;
         }
 
-        [Authorize(Roles = "Admin,Membro")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
 
@@ -29,8 +29,16 @@ namespace Kontrola.Controllers
             return View(await appDbContext.ToListAsync());
         }
 
-        // GET: Chamados/Details/5
-        [Authorize(Roles = "Admin")]
+		[Authorize(Roles = "Membro")]
+		public async Task<IActionResult> IndexMembro()
+		{
+
+			var appDbContext = _context.Chamados.Include(c => c.Gravidade).Include(c => c.Cliente).Include(c => c.Modalidade).Include(c => c.Status).Include(c => c.Tendencia).Include(c => c.Urgencia);
+			return View(await appDbContext.ToListAsync());
+		}
+
+		// GET: Chamados/Details/5
+		[Authorize(Roles = "Admin,Membro")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Chamados == null)

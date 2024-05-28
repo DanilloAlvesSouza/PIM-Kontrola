@@ -23,6 +23,7 @@ namespace Kontrola.Models
         public int ChamadoId { get; set; }
 
         [Required(ErrorMessage = "Obrigatorio Escolher a data de inicio do chamado")]
+        [Display(Name = "Data de Inicio")]
         public DateTime DataInicio { get; set; }
 
         [Required(ErrorMessage = "Obrigatorio Escolher a data de fechamento do chamado")]

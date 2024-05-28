@@ -8,46 +8,47 @@
 <hr />
 <div class="row">
     <div class=" d-flex justify-content-center">
-        <form class="row g-3 w-75 mt-3 border border-primary shadow-lg p-3 mb-5 bg-body-tertiary rounded" asp-action="Create">
+        <form class=" fw-bold  row g-3 w-75 mt-3 border border-primary shadow-lg p-3 mb-5 bg-body-tertiary rounded" asp-action="Create">
+            <p>* Campos Obrigatórios</p>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="col-md-6">
-                <label asp-for="DataInicio" class="control-label"></label>
+                <label asp-for="DataInicio" class="control-label">Data de Inicio *</label>
                 <input asp-for="DataInicio" class="form-control" />
                 <span asp-validation-for="DataInicio" class="text-danger"></span>
             </div>
             <div class="col-md-6">
-                <label asp-for="DataFechamento" class="control-label"></label>
+                <label  asp-for="DataFechamento" class="control-label">Data prevista de fechamento *</label>
                 <input asp-for="DataFechamento" class="form-control" />
                 <span asp-validation-for="DataFechamento" class="text-danger"></span>
             </div>
             <div class="col-12">
-                <label asp-for="Descricao" class="control-label"></label>
+                <label  asp-for="Descricao" class="control-label">Descrição *</label>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-            <div class="col-md-6">
-                <label asp-for="ClienteId" class="control-label">Cliente</label>
+            <div class="col-md-6 ">
+                <label asp-for="ClienteId" class="control-label">Cliente *</label>
                 <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
             </div>
             <div class="col-md-6">
-                <label asp-for="StatusId" class="control-label">Cliente</label>
+                <label asp-for="StatusId" class="control-label">Status *</label>
                 <select asp-for="StatusId" class="form-control" asp-items="ViewBag.StatusId"></select>
             </div>
             <div class="col-md-6">
-                <label asp-for="TendenciaId" class="control-label">Tendência</label>
+                <label asp-for="TendenciaId" class="control-label">Tendência *</label>
                 <select asp-for="TendenciaId" class="form-control" asp-items="ViewBag.TendenciaId"></select>
             </div>
 
             <div class="col-md-6">
-                <label asp-for="ModalidadeId" class="control-label">Modalidade</label>
+                <label asp-for="ModalidadeId" class="control-label">Modalidade *</label>
                 <select asp-for="ModalidadeId" class="form-control" asp-items="ViewBag.ModalidadeId"></select>
             </div>
             <div class="col-md-6">
-                <label asp-for="GravidadeId" class="control-label">Gravidade</label>
+                <label asp-for="GravidadeId" class="control-label">Gravidade *</label>
                 <select asp-for="GravidadeId" class="form-control" asp-items="ViewBag.GravidadeId"></select>
             </div>
             <div class="col-md-6">
-                <label asp-for="UrgenciaId" class="control-label">Urgência</label>
+                <label asp-for="UrgenciaId" class="control-label">Urgência *</label>
                 <select asp-for="UrgenciaId" class="form-control" asp-items="ViewBag.UrgenciaId"></select>
             </div>
             <div class="col-12">
